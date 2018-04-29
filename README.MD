@@ -7,3 +7,6 @@
 ## 成员字段数量检查
 
 每个类成员字段不能超过7个
+
+# 打开检查
+通过 设置 -> Editor -> Inspections -> Clean Code 勾选规则
