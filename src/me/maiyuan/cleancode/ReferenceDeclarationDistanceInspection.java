@@ -19,7 +19,7 @@ public class ReferenceDeclarationDistanceInspection extends BaseJavaLocalInspect
         return context instanceof PsiCodeBlock ? (PsiCodeBlock) context : lookupCodeBlock(context);
     }
 
-    private int getLineNumber(PsiElement element) {
+    private static int getLineNumber(PsiElement element) {
         Document document = PsiDocumentManager
                 .getInstance(element.getProject())
                 .getDocument(element.getContainingFile());
