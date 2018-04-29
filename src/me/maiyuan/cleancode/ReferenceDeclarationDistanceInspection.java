@@ -12,7 +12,7 @@ import static com.intellij.psi.controlFlow.DefUseUtil.getRefs;
 
 public class ReferenceDeclarationDistanceInspection extends BaseJavaLocalInspectionTool {
 
-    public static final int MAX_DISTANCE = 40; //can not get line number from the API
+    public static final int MAX_DISTANCE = 40;
 
     private static PsiCodeBlock lookupCodeBlock(PsiElement element) {
         PsiElement context = element.getContext();
